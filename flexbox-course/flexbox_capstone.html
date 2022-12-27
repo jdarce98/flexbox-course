@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.body {
+			margin: 0px;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			border: solid red;
+			border-width: 3px;
+			height: 32px;
+			background-color: cornflowerblue;
+			margin: 0px;
+			width: calc(100vw - 20px);
+		}
+
+		.container>.links-wrapper {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			width: 90vw;
+		}
+
+		.link {
+			border: solid black;
+			border-width: 2px;
+			width: fit-content;
+			padding: 5px;
+		}
+
+		.link3 {
+			display: flex;
+			justify-self: flex-end !important;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="links-wrapper">
+			<div class="link">
+				My name
+			</div>
+
+			<div class="link">
+				Link 1
+			</div>
+
+			<div class="link">
+				Link 2
+			</div>
+
+		</div>
+		<div class="link">
+			<div class="link3">Link-3</div>
+		</div>
+	</div>
+
+</body>

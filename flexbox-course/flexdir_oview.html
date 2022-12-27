@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* this is the parent flex container */
+        .container {
+            margin: 0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border: 10px solid red;
+            display: flex;
+            flex-direction: column;
+            /* row is the default for flex direction. flexbox will always display in row unless specified otherwise */
+            justify-content: center;
+        }
+
+        /* the below image blocks class is a flex container within a flex container */
+        .container>.img_blocks {
+            display: flex;
+            flex-direction: row;
+        /* if the parent (.container) class had flex direction set to row, you would get some weird behavior */
+            justify-content: center;
+        }
+    </Style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="img_blocks">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
